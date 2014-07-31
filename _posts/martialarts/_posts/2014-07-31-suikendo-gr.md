@@ -3,6 +3,7 @@ layout: martialart-frontpage
 title: Yamashita Suikendo
 category: martialart
 icon: http://suibukan.gr/el/content/54/yamashita-suikendo
+image: https://c1.staticflickr.com/3/2914/14772548166_047c8fc1ab.jpg
 ---
  Το suikendo είναι η προσωπική τεχνοτροπία του master Yamashita Tadashi. Η λέξη Suikendo είναι συνδυασμός των λέξεων "sui", που σημαίνει νερό, "ken", που σημαίνει γροθιά και "do", που σημαίνει τρόπος. «O τρόπος της γροθιάς που κυλάει σα νερό» είναι η φιλοσοφία και η αντίληψη της τεχνοτροπίας αυτής.
 
