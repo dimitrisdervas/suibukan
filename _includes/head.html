@@ -6,17 +6,39 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <!--     CDn JS -->
-    <script type="text/vbscript" src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider.js"></script>
-    <script>$(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide"
-      });
-    });</script>
-
-    <!-- Custom CSS -->
+        <!-- Custom CSS -->
+    
     <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider.css">
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700">
+    
+
+      <!-- Modernizr -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
+
+
+        <!--Flexslider-->
+           <script type="text/javascript">
+            // Can also be used with $(document).ready()
+             $(window).load(function(){
+              $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: true,
+                pausePlay: true,
+                controlNav: false,
+                  directionNav:false,
+                start: function(slider){
+                  $('body').removeClass('loading');
+                }
+              });
+            });
+               $(function() {
+                $( "#checkin,#checkout" ).datepicker();
+              });
+            </script>
+
 </head>

@@ -1,7 +1,7 @@
 @import "susy";
 
-.site-header {
-
+.page {
+	@include container;
 }
 .slideshow{
 
@@ -16,4 +16,10 @@
 }
 .videos {
 	
+}
+.content {
+	@include span(7 of 12)
+}
+.sidebar {
+	@include span(5 last of 12)
 }

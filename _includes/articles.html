@@ -1,0 +1,11 @@
+  <section class="articles-block ">
+     <ul class="list list-articles">
+       {% for post in site.categories['articles'] %} 
+             <li class="list-item">
+                 <section class="inside">
+                     <h1 class="articles-title"> <a href="{{ post.url }}">{{ post.title }}</a></h1>
+                  </section>
+                 </li>           
+          {% endfor %}   
+      </ul>
+  </section>

@@ -9,39 +9,60 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
     <link rel="canonical" href="http://yourdomain.com/">
-    <!--     CDn JS -->
-    <script type="text/vbscript" src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider.js"></script>
-    <script>$(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide"
-      });
-    });</script>
-
-    <!-- Custom CSS -->
+        <!-- Custom CSS -->
+    
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider.css">
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700">
+    
+
+      <!-- Modernizr -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
+
+
+        <!--Flexslider-->
+           <script type="text/javascript">
+            // Can also be used with $(document).ready()
+             $(window).load(function(){
+              $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: true,
+                pausePlay: true,
+                controlNav: false,
+                  directionNav:false,
+                start: function(slider){
+                  $('body').removeClass('loading');
+                }
+              });
+            });
+               $(function() {
+                $( "#checkin,#checkout" ).datepicker();
+              });
+            </script>
+
 </head>
 
 
     <body>
-
-    <header class="site-header">
-
-  <div class="wrap">
-
-    <a class="site-title" href="/"> <img src="https://c1.staticflickr.com/3/2921/14771259186_a39ee436de.jpg"></a>
-
-    <nav class="site-nav">
-      <a href="martialarts" class="menu-icon" >Πολεμικές Τέχνες</a>
-      <a href="martialarts" class="menu-icon" >Οργανισμός</a>
-      <a href="martialarts" class="menu-icon" >Άρθρα</a>
-      <a href="martialarts" class="menu-icon" >Νέα</a>
-    </nav>
-
-  </div>
-
+    <div class="page">
+    <header class="site-header-wrapper">
+	<div class="site-header">
+			<div class="logo">
+					<a class="site-title" href="/"> <img src="https://c1.staticflickr.com/3/2921/14771259186_a39ee436de.jpg"></a>
+				</div>
+			<nav class="menu">				
+				<li>	<a href="martialarts" class="menu-icon" >Suikendo</a></li>
+				<li>	<a href="martialarts" class="menu-icon" >Kobudo</a></li>
+				<li>	<a href="martialarts" class="menu-icon" >Karate</a></li>
+				<li>	<a href="martialarts" class="menu-icon" >Οργανισμός</a></li>
+				<li>	<a href="martialarts" class="menu-icon" >Άρθρα</a></li>
+				<li>	<a href="martialarts" class="menu-icon" >Νέα</a></li>
+				</nav>
+		</div>
 </header>
 
 
@@ -87,7 +108,35 @@
       </ul>
   </section>
     
-    
+      <section class="articles-block ">
+     <ul class="list list-articles">
+        
+             <li class="list-item">
+                 <section class="inside">
+                     <h1 class="articles-title"> <a href="/articles/_posts/2014/07/31/modern-karate-gr/">Σύγχρονο karate της Ιαπωνίας</a></h1>
+                  </section>
+                 </li>           
+           
+             <li class="list-item">
+                 <section class="inside">
+                     <h1 class="articles-title"> <a href="/articles/_posts/2014/07/31/farewell-sense-gr/">Αντίο, Sensei</a></h1>
+                  </section>
+                 </li>           
+           
+             <li class="list-item">
+                 <section class="inside">
+                     <h1 class="articles-title"> <a href="/articles/_posts/2014/07/31/bu-do-gr/">Τι σημαίνουν οι λέξεις “Bu” και “Budo”</a></h1>
+                  </section>
+                 </li>           
+           
+             <li class="list-item">
+                 <section class="inside">
+                     <h1 class="articles-title"> <a href="/articles/_posts/2014/07/31/about-do-gr/">Σχετικά με το Δρόμο (Do)</a></h1>
+                  </section>
+                 </li>           
+             
+      </ul>
+  </section>
 
     
 
@@ -156,6 +205,6 @@
 
 </footer>
 
-
+</div>
     </body>
 </html>

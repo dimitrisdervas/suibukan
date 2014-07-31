@@ -6,7 +6,6 @@ baseurl: ""
 url: "http://yourdomain.com"
 twitter_username: jekyllrb
 github_username:  jekyll
-encoding: ENCODING
 sass:
     sass_dir: _sass
 
