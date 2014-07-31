@@ -5,17 +5,47 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 31 Jul 2014 18:49:36 +0300</pubDate>
-    <lastBuildDate>Thu, 31 Jul 2014 18:49:36 +0300</lastBuildDate>
+    <pubDate>Thu, 31 Jul 2014 17:16:44 +0000</pubDate>
+    <lastBuildDate>Thu, 31 Jul 2014 17:16:44 +0000</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
-        <title>Yamashita Suikendo</title>
-        <description>&lt;p&gt;Tse&lt;/p&gt;
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
+To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
 
-&lt;p&gt;kashdfks fhsa  φησκαηδφ σδηφ κλξ η&lt;/p&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
+
 </description>
-        <pubDate>Thu, 31 Jul 2014 00:00:00 +0300</pubDate>
+        <pubDate>Thu, 31 Jul 2014 11:10:34 +0000</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2014/07/31/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2014/07/31/welcome-to-jekyll/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Yamashita Suikendo</title>
+        <description>&lt;p&gt;Το suikendo είναι η προσωπική τεχνοτροπία του master Yamashita Tadashi. Η λέξη Suikendo είναι συνδυασμός των λέξεων “sui”, που σημαίνει νερό, “ken”, που σημαίνει γροθιά και “do”, που σημαίνει τρόπος. «O τρόπος της γροθιάς που κυλάει σα νερό» είναι η φιλοσοφία και η αντίληψη της τεχνοτροπίας αυτής.&lt;/p&gt;
+
+&lt;p&gt;Κατά την κίνηση του σώματος τα άκρα εκτελούν πολλαπλές τεχνικές χτυπημάτων και σπασιμάτων, δημιουργώντας την αίσθηση νερού που πέφτει συγκεντρωμένο σε ένα σημείο από ψηλά. Η αποτελεσματικότητα αυτής της τεχνοτροπίας βασίζεται στη σύνδεση των άκρων με το κέντρο βάρους με συνεχές ki, ενώ ταυτόχρονα το σώμα είναι χαλαρό. Η βάση των τεχνικών που χρησιμοποιούνται στο suikendo δεν είναι τίποτε άλλο από μια πολύ εξελιγμένη μορφή της σπουδής του shorin ryu.&lt;/p&gt;
+
+&lt;p&gt;Το suikendo συνδυάζει στοιχεία Μάχης, Χορού και Αναπνοής. Αναπτύσσει τη φυσική δεξιότητα κι ευκινησία και δίνει στο πνεύμα μαχητική εγρήγορση.
+Σε μας, τους μαθητές του hanshi Yamashita, αρέσει να αναφερόμαστε στο suikendo σαν τη jazz των πολεμικών τεχνών.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
         <link>http://yourdomain.com/martialarts/_posts/martialart/2014/07/31/suikendo-gr/</link>
         <guid isPermaLink="true">http://yourdomain.com/martialarts/_posts/martialart/2014/07/31/suikendo-gr/</guid>
         
@@ -37,7 +67,7 @@
 &lt;p&gt;Το suikendo συνδυάζει στοιχεία Μάχης, Χορού και Αναπνοής. Αναπτύσσει τη φυσική δεξιότητα κι ευκινησία και δίνει στο πνεύμα μαχητική εγρήγορση.
 Σε μας, τους μαθητές του hanshi Yamashita, αρέσει να αναφερόμαστε στο suikendo σαν τη jazz των πολεμικών τεχνών.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 31 Jul 2014 00:00:00 +0300</pubDate>
+        <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
         <link>http://yourdomain.com/martialarts/_posts/martialart/2014/07/31/kobudo-gr/</link>
         <guid isPermaLink="true">http://yourdomain.com/martialarts/_posts/martialart/2014/07/31/kobudo-gr/</guid>
         
@@ -61,7 +91,7 @@
 &lt;p&gt;Η γενεαλογία του Kοbayashί shοrin ryu karate dο ξεκινά τον 19ο αιώνα από τον master “Bushi” Matsumura (1805-1893), κατόπιν τον master “Anko” Itosu (1832-1925), ενώ προσδιορίζεται ως ξεχωριστό στυλ από τον Chosin Chibana (1885-1969).
 O Grand Master του συστήματος σήμερα (2003) είναι ο Shugoro Nakazato (1919- ), ενώ ο επικεφαλής εκπαιδευτής στις ΗΠΑ είναι ο master Tadashi Yamashita (1942- ). Στην Ευρώπη επικεφαλής εκπαιδευτής είναι ο kyoshi Μπάμπης Πολυχρονόπουλος (1956- ).&lt;/p&gt;
 </description>
-        <pubDate>Thu, 31 Jul 2014 00:00:00 +0300</pubDate>
+        <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
         <link>http://yourdomain.com/martialarts/_posts/martialart/2014/07/31/karate-gr/</link>
         <guid isPermaLink="true">http://yourdomain.com/martialarts/_posts/martialart/2014/07/31/karate-gr/</guid>
         

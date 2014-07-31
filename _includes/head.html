@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!--     CDn JS -->
+    <script type="text/vbscript" src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider.js"></script>
+    <script>$(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });</script>
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider.css">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700">
 </head>
