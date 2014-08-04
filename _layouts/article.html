@@ -20,7 +20,20 @@
 
 		   <div class="sidebar">
 		   <div class="sidebar-content">
-		   	
+		   			   {{ page.tags }}
+
+			{% if tagging == 'karate' %}
+
+  					{% for image in site.data.karate %}
+					       <ul> 
+						       <li>
+						          <img src="{{ image.path }}">
+						        </li>
+					        </ul>
+						{% endfor %}
+
+			{% endif %}
+
 		   </div>
 
 	  		</div>

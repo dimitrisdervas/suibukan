@@ -7,8 +7,8 @@
 	@include container;
 }
 .logo {
-	@include span(5 of 12)
+	@include full;
 }
-.menu {
-	@include span(last 7 of 12)
+.menu, .menu ul {
+	@include full;
 }

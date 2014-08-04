@@ -5,8 +5,8 @@ $susy: (
   gutter-position: after,
   container: 1170px,
   container-position: center,
-  columns: 4,
-  gutters: .25,
+  columns: 12,
+  gutters: 1/3,
   column-width: false,
   global-box-sizing: content-box,
   last-flow: to,
@@ -16,11 +16,6 @@ $susy: (
     output: background,
     toggle: top right,
   ),
-  use-custom: (
-    background-image: true,
-    background-options: false,
-    box-sizing: true,
-    clearfix: false,
-    rem: true,
-  )
 );
+
+$nav-layout: layout( 12 0 float inside);

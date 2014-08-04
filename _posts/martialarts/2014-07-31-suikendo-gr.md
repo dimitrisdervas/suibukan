@@ -1,5 +1,5 @@
 ---
-layout: martialart
+layout: article
 title: Yamashita Suikendo
 category: martialart
 icon: http://suibukan.gr/el/content/54/yamashita-suikendo

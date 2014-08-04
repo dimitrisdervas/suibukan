@@ -5,32 +5,77 @@
 @import "layouts/header-layout";
 
 body {
-background-color: #f2f2f2;
+background-color: #fff;
+margin:0;
 }
+
 .site-header-wrapper {
-	background-color: #363636;
 	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-bottom: 40px;
 }
-nav.menu ul li {
-float: left;
-list-style: none;
-text-transform: uppercase;
-position: relative;
-margin-right: 37px;
+
+// Logo
+.logo {
+		text-align: center;
 }
-nav.menu ul li a {
-color: #fff;
-text-transform: uppercase;
-font-size: 12px;
-font-weight: 700;
--webkit-transition: color 0.3s;
--moz-transition: color 0.3s;
--ms-transition: color 0.3s;
--o-transition: color 0.3s;
-transition: color 0.3s;
+.logo a {
+	font-size: 3em;
+	line-height: 1.3em;
+	font-family: arial;
+	font-weight: bold;
+
 }
+// Slideshow
+// .flexslider {
+// 	margin: 0;
+// 	background: #fff;
+// 	border: none medium;
+// 	position: relative;
+// 	-webkit-border-radius: 0px;
+// 	-moz-border-radius: 0px;
+// 	-o-border-radius: 0px;
+// 	border-radius: 0px;
+// 	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	-moz-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	-o-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	zoom: 1;
+// }
+
+// 
+// Menu
+// 
+.menu ul li {
+	display: inline-block;
+
+}
+
+.menu ul li {
+	list-style: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.menu ul li a {
+	text-transform: uppercase;
+  line-height:1.3em;
+	color:#7f7f7f;
+  padding:0px 20px;
+}
+
+.menu  ul li:hover  {
+	color:#fff;
+  	background:#222222;
+}
+
+.menu  ul li.active  {
+	color:#fff;
+  	background:#333333; 
+}
+
+.menu  ul li.active  a:hover {
+  	background:#333333; 
+} 
+
 .page {
 
 }
@@ -81,7 +126,7 @@ transition: color 0.3s;
 div, ul, .gallery-caption, footer p, li a, p, span, article, nav, blockquote, dl, dt, dd, td, a, tr, th, code, caption, figcaption, input, label, textarea {
 	font-family: 'Open Sans' , sans-serif;
 	font-weight: 400;
-	color: #636467;
+	color: #333333;
 	font-size: 16px;
 	line-height: 26px;
 	-webkit-font-smoothing: antialiased;
@@ -92,8 +137,14 @@ h1, h1 a, h1 span, h2, h2 a, h2 span, h3, h3 a, h3 span, h4, h4 a, h4 span, h5, 
 	color: #3c3c3c;
 }
 h1 {
-	margin-bottom: 30px;
+	font-family: "Roboto Slab";
+	margin-bottom: 40px;
+	line-height: 1.5em;
+	font-size:2.2em;
 }
 img {
-	width:100%;
+	width: 100%;
+}
+a,a:hover {
+	text-decoration: none;
 }

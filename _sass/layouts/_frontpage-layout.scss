@@ -3,8 +3,8 @@
 .page {
 	@include container;
 }
-.slideshow{
-
+.slideshow-block{
+	@include container;
 }
 
 .martialarts {
@@ -18,8 +18,8 @@
 	
 }
 .content {
-	@include span(7 of 12)
+	@include span(8 of 12)
 }
 .sidebar {
-	@include span(5 last of 12)
+	@include span(4 last of 12)
 }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider.css">
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700/Roboto+Slab:400,700">
     
 
       <!-- Modernizr -->
@@ -27,18 +27,13 @@
              $(window).load(function(){
               $('.flexslider').flexslider({
                 animation: "slide",
-                animationLoop: true,
-                pausePlay: true,
+                animationLoop: false,
+                pausePlay: false,
                 controlNav: false,
-                  directionNav:false,
-                start: function(slider){
-                  $('body').removeClass('loading');
+                  directionNav:true
                 }
               });
             });
-               $(function() {
-                $( "#checkin,#checkout" ).datepicker();
-              });
             </script>
 
 </head>
