@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+        
+    <div class="page">
+        <div class="container">
+            {% include header.html %}
+            
+          {% for post in site.categories.['articles'] %}
+             <div class="content">
+			    <img src="{{ post.image }}" alt="">
+			   
+			    <div class="content-inner">
+			     <h1> {{ post.title}} </h1>
+			    {% if post.content contains '<!--more-->' %}
+                    {{ post.content | split:'<!--more-->' | first }}
+                    
+                    <button class="continue-reading">
+                        <a href="{{ post.url }}">Συνέχισε</a>
+                    </button>
+                    
+                {% else %}
+                    {{ post.content }}
+                {% endif %}
+			    </div>			   	
+		   	</div>
+           {% endfor %}
+            
+		   <div class="sidebar">
+               <div class="sidebar-content">
+               </div>
+	  		</div>
+            
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+    </body>
+</html>

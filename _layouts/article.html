@@ -20,20 +20,70 @@
 
 		   <div class="sidebar">
 		   <div class="sidebar-content">
-		   			   {{ page.tags }}
+               <!-- gist to watch https://gist.github.com/dhutchison/8548106  -->                    
 
-			{% if tagging == 'karate' %}
+                       <ul>
+                            {% for photos in site.data[page.martialart] %}
+                              <li>
+                                <img src="{{ photos.path }}">                                                    
+                              </li>
+                            {% endfor %}
+               </ul> 
+               {{ site.data.orgs[1].username }}
+          
+               
+<!-- 
+            <ul>
+            {% for org_hash in site.data.orgs %}
+            {% assign org = org_hash[1] %}
+              <li>
+                  
+               username: {{ org.username }} / {{ org_hash[1]['username'] }} <br>
+               name:   {{ org.name }} <br>
+               member name:    <br>
+                  
+               1 {{ site.data.orgs.author[post.author]['name'] }}  2{{ site.data.orgs.author.david.name }} 3{{ site.data.orgs.author[post.author].name }}
 
-  					{% for image in site.data.karate %}
-					       <ul> 
-						       <li>
-						          <img src="{{ image.path }}">
-						        </li>
-					        </ul>
-						{% endfor %}
+                  1deep - {{ site.data.orgs.doeorg.username }}
+                  2deep - {{ site.data.orgs.doeorg.members.name }}
+                  
+                   1deep - {{ site.data.orgs.jekyl.username }}
+                  2deep - {{ site.data.orgs.jekyl.members.name }}
+                  2deep - {{ site.data.orgs.jekyl.members.name[2] }}
+              </li>
+            {% endfor %}
+            </ul> -->
 
-			{% endif %}
+               
+<!--                http://www.tournemille.com/blog/How-to-create-data-driven-navigation-in-Jekyll/ -->
+<!--  {% for dale in site.data.nav %}
+               {% for subcategory in dale.subcategories %}
+               {{ subcategory.subhref }}{{ subcategory.subtitle }}
+               {% endfor %}
+               {% endfor %} -->
+               
+               
+               {% for post in site.data[page.martialart] %}
+                   {% for master in post.masters %}
+                       <ul> 
+                           <li>  
+                               {{ master.name }} {{ master.period }}
+                           </li>
+                       </ul>
+                   {% endfor %}
+               {% endfor %}
 
+               
+               {% for post in site.data[page.martialart] %}
+                   {% for kata in post.kata %}
+                       <ul> 
+                           <li>  
+                               {{ kata.title }}
+                           </li>
+                       </ul>
+                   {% endfor %}
+               {% endfor %}
+               
 		   </div>
 
 	  		</div>

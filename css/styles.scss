@@ -57,7 +57,7 @@ margin:0;
 
 .menu ul li a {
 	text-transform: uppercase;
-  line-height:1.3em;
+  line-height:50px;
 	color:#7f7f7f;
   padding:0px 20px;
 }
@@ -147,4 +147,8 @@ img {
 }
 a,a:hover {
 	text-decoration: none;
+}
+    .continue-reading {
+        @include span( 2 last of 12 )
+    
 }
