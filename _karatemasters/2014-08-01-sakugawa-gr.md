@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Tode Sakugawa
 period: 18 αιώνας
 image: http://suibukan.gr/sites/suibukan.com/files/budoka_photos/sui_sakugawa.jpg?1280633046

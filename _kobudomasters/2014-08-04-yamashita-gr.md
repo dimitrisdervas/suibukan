@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Tadashi Yamashita
 period: 1942 - σήμερα
 image: http://suibukan.gr/sites/suibukan.com/files/budoka_photos/sui_yamashita.jpg

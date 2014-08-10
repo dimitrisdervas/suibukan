@@ -1,0 +1,15 @@
+  <section class="news-block ">
+     <ul class="list list-news">
+       {% for post in site.categories['news'] limit:1 %} 
+                  <section class="inside">
+                         <div class="news-left">
+                             <img src="{{ post.image }}" alt="">
+                          </div>
+                          <div class="news-right"> 
+                              <h1 class="news-title"> <a href="{{ post.url }}">{{ post.title }}</a></h1>
+                              {{ post.content }}
+                          </div>              
+                     </section>
+          {% endfor %}   
+      </ul>
+  </section>

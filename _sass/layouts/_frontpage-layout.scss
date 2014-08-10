@@ -23,6 +23,7 @@
 .page {
 	@include container;
 }
+
 .slideshow-block{
 	@include container;
 }
@@ -38,12 +39,25 @@
 .videos {
 	
 }
+
+
+
 .content {
-	@include span(8 of 12)
+	@include span(8 of $small)
 }
 .sidebar {
-	@include span(4 last of 12)
+	@include span(4 of $small)
 }
 .site-footer{
     @include sticky-footer(30px, '.page', '.container', '.site-footer');
+}
+.news-block {
+    @include full;
+        .news-left {
+        @include span(6 of 12)
+    }
+        .news-right {
+        @include span(5 of 12)
+    }
+
 }

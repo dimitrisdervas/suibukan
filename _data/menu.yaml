@@ -1,0 +1,37 @@
+- title: "Αρχική"
+  href: "/"
+ 
+- title: "Karate"
+  href: "/martialarts/karate-gr/"
+  subcategories:
+    - subtitle: "Τι σημαίνει"
+      subhref: "/martialarts/martialart/karate-gr/"
+    - subtitle: "Masters"
+      subhref: "/learn1/"
+    - subtitle: "Kata"
+      subhref: "/learn2/"
+ 
+- title: "Kobudo"
+  href: "/martialarts/kobudo-gr/"
+  subcategories:
+    - subtitle: "Τι σημαίνει"
+      subhref: "/martialarts/martialart/kobudo-gr/"
+    - subtitle: "Masters"
+      subhref: "/tools1/"
+    - subtitle: "Όπλα"
+      subhref: "/tools2/"
+ 
+- title: "Suikendo"
+  href: "/martialarts/suikendo-gr/"
+ 
+ 
+- title: "Οργανισμός"
+  href: "/"
+ 
+ 
+- title: "Άρθρα"
+  href: "/articles/"
+ 
+ 
+- title: "Νέα"
+  href: "/news/"

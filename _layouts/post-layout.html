@@ -10,9 +10,9 @@
     <div class="page">
 		   <div class="content">
 			    
-			    <img src="{{page.image}}" alt="">
-			   
-			    <div class="content-inner">
+<!-- 			    <img src="{{page.image}}" alt=""> -->
+			   <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url={{page.image}}&width=772&height=350" alt="{{page.title}}">
+               <div class="content-inner">
 			     <h1>{{page.title}}</h1>
 			    {{content}}
 			    </div>			   	
@@ -21,16 +21,6 @@
 		   <div class="sidebar">
 		   <div class="sidebar-content">
                <!-- gist to watch https://gist.github.com/dhutchison/8548106  -->                    
-
-                       <ul>
-                            {% for photos in site.data[page.martialart] %}
-                              <li>
-                                <img src="{{ photos.path }}">                                                    
-                              </li>
-                            {% endfor %}
-               </ul> 
-               {{ site.data.orgs[1].username }}
-          
                
 <!-- 
             <ul>
@@ -61,13 +51,31 @@
                {{ subcategory.subhref }}{{ subcategory.subtitle }}
                {% endfor %}
                {% endfor %} -->
+
+                <ul class="list list-articles">
+       {% for post in site.categories['kata'] %} 
+             <li class="list-item">
+                 <section class="inside">
+                     <h1 class="martiarts-title"> <a href="{{ post.url }}">{{ post.title }}</a></h1>
+                  </section>
+                 </li>        
+          {% endfor %}   
+      </ul>
+               <div class="latestnews-block">
+                   <h3 class="sidebar">Τελευταία νέα</h3>
+                {% for post in site.categories['news'] limit:1 %}
+                   {{ post.title }}
+               {% endfor %}
+               </div>
+                
                
+
                
                {% for post in site.data[page.martialart] %}
                    {% for master in post.masters %}
                        <ul> 
                            <li>  
-                               {{ master.name }} {{ master.period }}
+                               {{ master.name }} {{ master.period }} {{ master.text }}
                            </li>
                        </ul>
                    {% endfor %}

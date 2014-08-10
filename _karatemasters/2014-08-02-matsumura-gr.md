@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Sokon "Bushi" Matsumura
 period: 19 αιώνας
 image: http://suibukan.gr/sites/suibukan.com/files/budoka_photos/sui_matsumura.jpg?1280632962

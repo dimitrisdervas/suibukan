@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Αντίο, Sensei
 image: http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/20110522_yamashita_seminar_spring_2011_117_s.jpg
 ---

@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Choshin Chibana
 period: 1885-1969
 image: http://suibukan.gr/sites/suibukan.com/files/budoka_photos/chibana.jpg

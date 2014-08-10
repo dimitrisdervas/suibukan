@@ -8,7 +8,50 @@ twitter_username: jekyllrb
 github_username:  jekyll
 sass:
     sass_dir: _sass
-
+collections:
+  karate-masters:
+    output: true
+  kobudomasters:
+    output: true
+     
 # Build settings
 markdown: kramdown
 permalink: /:categories/:title
+
+defaults:
+  -
+    scope:
+      path: "articles"
+      type: "post"
+    values:
+      layout: "post-layout"
+  -
+    scope:
+      path: "martialarts"
+      type: "post"
+    values:
+      layout: "martialart-layout"
+  -
+    scope:
+      path: "karatemasters"
+      type: "post"
+    values:
+      layout: "post-layout" # overrides previous default layout
+  -
+    scope:
+      path: "karatekata"
+      type: "post"
+    values:
+      layout: "post-layout" # overrides previous default layout
+  -
+    scope:
+      path: "kobudomasters"
+      type: "post"
+    values:
+      layout: "post-layout" # overrides previous default layout
+  -
+    scope:
+      path: "suikendo"
+      type: "post"
+    values:
+      layout: "post-layout" # overrides previous default layout

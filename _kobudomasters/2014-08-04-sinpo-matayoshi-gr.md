@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Sinko Matayoshi
 period: 1921–1997
 image: http://suibukan.gr/sites/suibukan.com/files/budoka_photos/sui_sakugawa.jpg?1280633046

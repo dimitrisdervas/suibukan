@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Shugoro Nakazato
 period: 1919 - σήμερα
 image: http://suibukan.gr/sites/suibukan.com/files/budoka_photos/sui_nakazato.jpg

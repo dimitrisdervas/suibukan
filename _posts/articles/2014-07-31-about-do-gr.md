@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Σχετικά με το Δρόμο (Do)
 image: http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/article_photos/hqdefault.jpg
 ---
