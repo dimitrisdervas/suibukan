@@ -9,9 +9,13 @@ github_username:  jekyll
 sass:
     sass_dir: _sass
 collections:
-  karate-masters:
+  karatemasters:
     output: true
   kobudomasters:
+    output: true
+  karatekata:
+    output: true
+  kobudokata:
     output: true
      
 # Build settings
@@ -21,37 +25,37 @@ permalink: /:categories/:title
 defaults:
   -
     scope:
-      path: "articles"
-      type: "post"
+       path: ""
+       type: "post"
     values:
-      layout: "post-layout"
+       layout: "post-layout"
   -
     scope:
-      path: "martialarts"
-      type: "post"
+       path: ""
+       type: "karatemasters"
     values:
-      layout: "martialart-layout"
+       layout: "post-layout"
   -
     scope:
-      path: "karatemasters"
-      type: "post"
+       path: ""
+       type: "kobudomasters"
     values:
-      layout: "post-layout" # overrides previous default layout
+       layout: "post-layout"
   -
     scope:
-      path: "karatekata"
-      type: "post"
+       path: ""
+       type: "karatekata"
     values:
-      layout: "post-layout" # overrides previous default layout
+       layout: "post-layout"  
   -
     scope:
-      path: "kobudomasters"
-      type: "post"
+       path: ""
+       type: "kobudokata"
     values:
-      layout: "post-layout" # overrides previous default layout
+       layout: "post-layout"
   -
     scope:
-      path: "suikendo"
-      type: "post"
+       path: "martialarts"
+       type: "post"
     values:
-      layout: "post-layout" # overrides previous default layout
+       layout: "martialart-layout"

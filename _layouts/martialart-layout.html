@@ -22,11 +22,13 @@
                <div class="sidebar-content">
                    <div class="kata-sidebar">
 
-{{page.masters}}
+                        <h3>Masters</h3>
                       {% for post in site.[page.masters] %}
                               <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> 
                        {% endfor %}
-                      {% for post in site.karatekata %}
+                       
+                       <h3>Kata</h3>
+                      {% for post in site.[page.kata] %}
                               <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> 
                        {% endfor %}
 

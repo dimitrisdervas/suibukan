@@ -13,33 +13,14 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700/Roboto+Slab:400,700">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/main.css">
-    
-
-      <!-- Modernizr -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <!--     Add flexslider -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
-   
-
-        <!--Flexslider-->
-           <script type="text/javascript">
-            // Can also be used with $(document).ready()
-             $(window).load(function(){
-              $('.flexslider').flexslider({
-                animation: "slide",
-                animationLoop: false,
-                pausePlay: false,
-                controlNav: false,
-                  directionNav:true
-                }
-              });
-            });
-            </script>
+<!--     http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly -->
+     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/doubletaptogo.min.js"></script> 
+    <script>$( '#nav li:has(ul)' ).doubleTapToGo();</script>
+  
     </head>
 
 
@@ -51,40 +32,73 @@
 			<div class="logo">
 					<a class="site-title" href="/"> SUIBUKAN </a>
 				</div>
-			<nav class="menu">
+        
+			<nav id="nav" role="navigation">
 			    <ul>	
-                     
-                        <li>                                       
-                            <a href="/"> Αρχική </a>
-                        </li>
-                     
-                        <li>                                       
-                            <a href="/martialarts/karate-gr/"> Karate </a>
-                        </li>
-                     
-                        <li>                                       
-                            <a href="/martialarts/kobudo-gr/"> Kobudo </a>
-                        </li>
-                     
-                        <li>                                       
-                            <a href="/martialarts/suikendo-gr/"> Suikendo </a>
-                        </li>
-                     
-                        <li>                                       
-                            <a href="/"> Οργανισμός </a>
-                        </li>
-                     
-                        <li>                                       
-                            <a href="/articles/"> Άρθρα </a>
-                        </li>
-                     
-                        <li>                                       
-                            <a href="/news/"> Νέα </a>
-                        </li>
-                    
-				    </ul>
-				</nav>
-		</div>     
+                                         
+                          <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/">Αρχική</a>
+                            
+                                </li>
+                                                
+                         
+                                <li>
+                                    <a href="/" aria-haspopup="true">Karate</a>
+                                        <ul>
+                                            
+                                            <li><a href="/martialarts/martialart/karate-gr/">Τι σημαίνει</a></li>
+                                            
+                                            <li><a href="/learn1/">Masters</a></li>
+                                            
+                                            <li><a href="/learn2/">Kata</a></li>
+                                            
+                                        </ul>
+                            
+                                </li>
+                                                
+                         
+                                <li>
+                                    <a href="/" aria-haspopup="true">Kobudo</a>
+                                        <ul>
+                                            
+                                            <li><a href="/martialarts/martialart/kobudo-gr/">Τι σημαίνει</a></li>
+                                            
+                                            <li><a href="/tools1/">Masters</a></li>
+                                            
+                                            <li><a href="/tools2/">Όπλα</a></li>
+                                            
+                                        </ul>
+                            
+                                </li>
+                                                
+                          <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/martialarts/suikendo-gr/">Suikendo</a>
+                            
+                                </li>
+                                                
+                          <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/organization">Οργανισμός</a>
+                            
+                                </li>
+                                                
+                          <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/articles/">Άρθρα</a>
+                            
+                                </li>
+                                                
+                          <!— display the top level navigation for items that don’t have a submenu -->
+                                <li>
+                                    <a href="/news/">Νέα</a>
+                            
+                                </li>
+                           
+                    </ul>                
+                 </nav>    
+        </div>     
 </header>
 
 
@@ -196,7 +210,13 @@
   </section>
 
     
-
+            
+    <!-- Google map    
+    <div id="map"></div>
+    -->
+    <!-- Leaflet Map added to below footer-->
+    <div id="map-canvas"></div>
+            
       <section class="news-block ">
      <ul class="list list-news">
         
@@ -280,6 +300,384 @@
 
 </footer>
 
+    <!-- Modernizr -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+   
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <!--     Foundation //cdnjs.cloudflare.com/ajax/libs/foundation/5.3.1/js/foundation.min.js-->
+<!--      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.1/js/foundation.min.js"></script> -->
+<!--     <script src="js/foundation.js" ></script>
+    <script src="js/foundation.dropdown.js"></script> -->
 
+    <!--     Add flexslider -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
+
+
+
+        <!--Flexslider-->
+<!--            <script type="text/javascript">
+            // Can also be used with $(document).ready()
+             $(window).load(function(){
+              $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: false,
+                pausePlay: false,
+                controlNav: false,
+                  directionNav:true
+                }
+              });
+            });       
+            </script>     -->
+<!--         <script>
+            $(document).foundation({
+          dropdown: {
+            // specify the class used for active dropdowns
+            active_class: 'open'
+          }
+        });
+    </script> -->
+
+
+<!--     <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+    <script>
+
+        var planes = [
+            ["7C6B07",-40.99497,174.50808],
+            ["7C6B38",-41.30269,173.63696],
+            ["7C6CA1",-41.49413,173.5421],
+            ["7C6CA2",-40.98585,174.50659],
+            ["C81D9D",-40.93163,173.81726],
+            ["C82009",-41.5183,174.78081],
+            ["C82081",-41.42079,173.5783],
+            ["C820AB",-42.08414,173.96632],
+            ["C820B6",-41.51285,173.53274]
+        ];
+
+        var map = L.map('map').setView([-41.3058, 174.82082], 8);
+        mapLink = 
+            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; ' + mapLink + ' Contributors',
+                maxZoom: 18,
+            }).addTo(map);
+
+        for (var i = 0; i < planes.length; i++) {
+            marker = new L.marker([planes[i][1],planes[i][2]])
+            .bindPopup(planes[i][0])
+            .addTo(map);
+        }
+
+    </script> -->
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+<!--      <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+                function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{featureType:"landscape",stylers:[{saturation:-100},{lightness:65},{visibility:"on"}]},{featureType:"poi",stylers:[{saturation:-100},{lightness:51},{visibility:"simplified"}]},{featureType:"road.highway",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"road.arterial",stylers:[{saturation:-100},{lightness:30},{visibility:"on"}]},{featureType:"road.local",stylers:[{saturation:-100},{lightness:40},{visibility:"on"}]},{featureType:"transit",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"administrative.province",stylers:[{visibility:"off"}]/**/},{featureType:"administrative.locality",stylers:[{visibility:"off"}]},{featureType:"administrative.neighborhood",stylers:[{visibility:"on"}]/**/},{featureType:"water",elementType:"labels",stylers:[{visibility:"on"},{lightness:-25},{saturation:-100}]},{featureType:"water",elementType:"geometry",stylers:[{hue:"#ffff00"},{lightness:-25},{saturation:-97}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using out element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+            }
+        </script>
+    -->
+
+<script>
+var LocationData = [
+    [38.238285, 21.742095, "Dojo Patras","697.773.6914"],
+    [40.626758, 22.965183, "Καυταντζόγλειο","693.700.8119"],
+    [37.985445, 23.727874, "Dojo Athens","697.324.7755"],
+    [40.606748, 22.997230, "Dojo","697.644.1064"], 
+    [40.635379, 22.936829, "Wu Shu"]
+];
+ 
+function initialize()
+{
+    var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 8,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(39.3887771,22.9121262), // Greece
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    // http://www.mapstylr.com/
+        styles : [
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 65
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 51
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 30
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "weight": 0.29
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": -13
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#00b3ff"
+            },
+            {
+                "saturation": -21
+            },
+            {
+                "lightness": -25
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#8693a1"
+            },
+            {
+                "weight": 2.3
+            },
+            {
+                "lightness": -13
+            },
+            {
+                "gamma": 1.08
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "weight": 0.48
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight": 2.6
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": -37
+            },
+            {
+                "gamma": 0.01
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#f5f0f5"
+            },
+            {
+                "weight": 4.43
+            }
+        ]
+    }
+]						
+                };
+    var mapElement = document.getElementById('map-canvas');
+    var map = new google.maps.Map(mapElement, mapOptions);
+    var bounds = new google.maps.LatLngBounds();
+    var infowindow = new google.maps.InfoWindow({ maxWidth: 200 });
+     
+    for (var i in LocationData)
+    {
+        var p = LocationData[i];
+        var latlng = new google.maps.LatLng(p[0], p[1]);
+        bounds.extend(latlng);
+         
+        
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: p[2],
+            mob: p[3]
+        });
+         
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent( "<h3>" + this.title + "</h3>"  + this.mob );
+            infowindow.open(map, this);
+        });
+    }
+     
+    map.fitBounds(bounds);
+}
+ 
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+        
     </body>
 </html>

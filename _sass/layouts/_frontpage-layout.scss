@@ -40,7 +40,11 @@
 	
 }
 
-
+#map,
+#map-canvas {
+    @include full;
+    height: 500px;
+}
 
 .content {
 	@include span(8 of $small)

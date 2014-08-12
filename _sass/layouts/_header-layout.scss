@@ -1,4 +1,5 @@
 @import "../susy";
+@import "foundation/components/top-bar";
 
 .site-header-wrapper {
 	@include full;
@@ -9,6 +10,7 @@
 .logo {
 	@include full;
 }
-.menu, .menu ul {
+.nav, .nav ul {
 	@include full;
 }
+
