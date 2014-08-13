@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  {% include head-post.html %}
 
     <body>
         
     <div class="page">
         <div class="container">
-            {% include header.html %}
+            {% include header-post-include.html %}
             
           {% for post in site.categories.['articles'] %}
              <div class="content">
@@ -38,7 +38,8 @@
         </div>
     </div>
 
-    {% include footer.html %}
+        {% include footer-post-include.html %}
+        {% include bottom-post.html %}
 
     </body>
 </html>

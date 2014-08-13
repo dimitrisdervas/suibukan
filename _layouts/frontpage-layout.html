@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  {% include head-front.html %}
 
     <body>
-    <div class="page">
-        <div class="container">
-    {% include header.html %}
+
+    {% include header-front-include.html %}
 
     {% include slideshow.html %}
 
@@ -15,18 +14,13 @@
     {% include articles-include.html %}
 
     {% include videos.html %}
-            
-    <!-- Google map    
-    <div id="map"></div>
-    -->
-    <!-- Leaflet Map added to below footer-->
-    <div id="map-canvas"></div>
-            
-    {% include news.html %}
-</div>
-        </div>
 
-    {% include footer.html %}
+    {% include news.html %}
         
+    <div id="map-canvas"></div>
+
+    {% include footer-front-include.html %}
+    
+    {% include bottom-front.html %}
     </body>
 </html>

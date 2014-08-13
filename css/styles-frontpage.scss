@@ -1,0 +1,72 @@
+---
+---
+@import "susy"; 
+@import "layouts/frontpage-layout";
+@import "layouts/header-front-layout";
+@import "menu/menu-front";
+@import "typography";
+
+body {
+background-color: #fff;
+margin:0;
+}
+// Logo
+.logo {
+		text-align: center;
+}
+.logo a {
+    font-size: 3.5em;
+    line-height: 2.5em;
+	font-family: arial;
+	font-weight: bold;
+    font-family:"Oswald";
+
+}
+// Slideshow
+// .flexslider {
+// 	margin: 0;
+// 	background: #fff;
+// 	border: none medium;
+// 	position: relative;
+// 	-webkit-border-radius: 0px;
+// 	-moz-border-radius: 0px;
+// 	-o-border-radius: 0px;
+// 	border-radius: 0px;
+// 	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	-moz-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	-o-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	box-shadow: 0 0px 0px rgba(0,0,0,.2);
+// 	zoom: 1;
+// }
+
+// 
+// Menu
+// 
+.menu-wrapper {
+    @include full;
+} 
+.page {
+
+}
+.slideshow{
+
+}
+
+.martialarts {
+
+}
+
+.articles {
+
+}
+.videos {
+	
+}
+.bloglist-block .list-articles .list-item {
+     text-align: center;
+}
+/* Google map */
+    .gm-style-iw {
+width: 150px; 
+min-height: 35px;
+}

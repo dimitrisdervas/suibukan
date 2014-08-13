@@ -12,9 +12,9 @@
         <!-- CSS -->  
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/flexslider.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700/Roboto+Slab:400,700">
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:400,700/Roboto+Slab:400,700/Roboto+Condensed:400,700/Oswald:400,700">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles-frontpage.css">
     <link rel="stylesheet" href="/css/main.css">
 <!--     http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly -->
      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
@@ -25,14 +25,13 @@
 
 
     <body>
-    <div class="page">
-        <div class="container">
+
     <header class="site-header-wrapper">
 	<div class="site-header">
 			<div class="logo">
 					<a class="site-title" href="/"> SUIBUKAN </a>
 				</div>
-        
+        <div class="menu-wrapper" >
 			<nav id="nav" role="navigation">
 			    <ul>	
                                          
@@ -44,10 +43,10 @@
                                                 
                          
                                 <li>
-                                    <a href="/" aria-haspopup="true">Karate</a>
+                                    <a href="#/" aria-haspopup="true">Karate</a>
                                         <ul>
                                             
-                                            <li><a href="/martialarts/martialart/karate-gr/">Τι σημαίνει</a></li>
+                                            <li><a href="/martialarts/karate-gr/">Τι σημαίνει</a></li>
                                             
                                             <li><a href="/learn1/">Masters</a></li>
                                             
@@ -59,10 +58,10 @@
                                                 
                          
                                 <li>
-                                    <a href="/" aria-haspopup="true">Kobudo</a>
+                                    <a href="#/" aria-haspopup="true">Kobudo</a>
                                         <ul>
                                             
-                                            <li><a href="/martialarts/martialart/kobudo-gr/">Τι σημαίνει</a></li>
+                                            <li><a href="/martialarts/kobudo-gr/">Τι σημαίνει</a></li>
                                             
                                             <li><a href="/tools1/">Masters</a></li>
                                             
@@ -98,11 +97,12 @@
                            
                     </ul>                
                  </nav>    
+            </div>
         </div>     
 </header>
 
 
-     <section class="slideshow-block">
+     <section class="slideshow-section">
   <div class="slideshow">
     <ul class="slides">
     <li>
@@ -116,32 +116,32 @@
 
 
 
-      <section class="bloglist-block ">
-     <ul class="list list-articles">
+      <section class="martialarts-section">
+     <ul class="list">
         
              <li class="list-item">
-                 <section class="inside">
+                 <div class="inside">
                      <h1 class="martiarts-title"> <a href="/martialarts/suikendo-gr">Yamashita Suikendo  </a></h1>
-                  </section>
+                  </div>
                  </li>        
            
              <li class="list-item">
-                 <section class="inside">
+                 <div class="inside">
                      <h1 class="martiarts-title"> <a href="/martialarts/kobudo-gr">Matayoshi Kobudo  </a></h1>
-                  </section>
+                  </div>
                  </li>        
            
              <li class="list-item">
-                 <section class="inside">
+                 <div class="inside">
                      <h1 class="martiarts-title"> <a href="/martialarts/karate-gr">Kobayashi Shorin Ryu  </a></h1>
-                  </section>
+                  </div>
                  </li>        
              
       </ul>
   </section>
     
       <section class="articles-section ">
-     <ul class="list list-articles">
+     <ul class="list">
         
              <li class="list-item">
                  <div class="inside">
@@ -209,18 +209,23 @@
       </ul>
   </section>
 
-    
-            
-    <!-- Google map    
-    <div id="map"></div>
-    -->
-    <!-- Leaflet Map added to below footer-->
-    <div id="map-canvas"></div>
-            
-      <section class="news-block ">
+      <section class="videos-section ">
+        
+                  <div class="inside">
+                       <div class="videos-left">
+                             <iframe width="640" height="360"  src="//www.youtube.com/embed/BKhzFl3_NxA?rel=0" frameborder="0" allowfullscreen></iframe>
+                          </div>
+                       <div class="videos-right"> 
+                             <h3> Λίγα λόγια για το Suibukan... </h3>
+                          </div>                         
+                       </div>  
+          
+  </section>
+
+      <section class="news-section ">
      <ul class="list list-news">
         
-                  <section class="inside">
+                  <div class="inside">
                          <div class="news-left">
                              <img src="http://suibukan.gr/sites/suibukan.com/files/imagecache/news_640px/news_photos/20100912_litohoro_440_s.jpg" alt="">
                           </div>
@@ -231,12 +236,12 @@
 <p>Φέτος θα γίνει το Σαββατοκύριακο 6 &amp; 7 Σεπτεμβρίου.</p>
 
                           </div>              
-                     </section>
+                     </div>
              
       </ul>
   </section>
-</div>
-        </div>
+        
+    <div id="map-canvas"></div>
 
     <footer class="wrapper site-footer">
 
@@ -299,8 +304,8 @@
   </div>
 
 </footer>
-
-    <!-- Modernizr -->
+    
+        <!-- Modernizr -->
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
    
@@ -370,34 +375,9 @@
         }
 
     </script> -->
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-<!--      <script type="text/javascript">
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
-                function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
-
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
-
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [{featureType:"landscape",stylers:[{saturation:-100},{lightness:65},{visibility:"on"}]},{featureType:"poi",stylers:[{saturation:-100},{lightness:51},{visibility:"simplified"}]},{featureType:"road.highway",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"road.arterial",stylers:[{saturation:-100},{lightness:30},{visibility:"on"}]},{featureType:"road.local",stylers:[{saturation:-100},{lightness:40},{visibility:"on"}]},{featureType:"transit",stylers:[{saturation:-100},{visibility:"simplified"}]},{featureType:"administrative.province",stylers:[{visibility:"off"}]/**/},{featureType:"administrative.locality",stylers:[{visibility:"off"}]},{featureType:"administrative.neighborhood",stylers:[{visibility:"on"}]/**/},{featureType:"water",elementType:"labels",stylers:[{visibility:"on"},{lightness:-25},{saturation:-100}]},{featureType:"water",elementType:"geometry",stylers:[{hue:"#ffff00"},{lightness:-25},{saturation:-97}]}]
-                };
-
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
-
-                // Create the Google Map using out element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-            }
-        </script>
-    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+<!-- Added this tip
+http://bdadam.com/blog/simple-usability-trick-for-google-maps.html -->
 
 <script>
 var LocationData = [
@@ -407,7 +387,9 @@ var LocationData = [
     [40.606748, 22.997230, "Dojo","697.644.1064"], 
     [40.635379, 22.936829, "Wu Shu"]
 ];
- 
+
+
+    
 function initialize()
 {
     var mapOptions = {
@@ -416,7 +398,7 @@ function initialize()
 
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(39.3887771,22.9121262), // Greece
-
+        
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
                     // http://www.mapstylr.com/
@@ -666,18 +648,19 @@ function initialize()
             title: p[2],
             mob: p[3]
         });
-         
+        
+        
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.setContent( "<h3>" + this.title + "</h3>"  + this.mob );
             infowindow.open(map, this);
         });
     }
+
      
     map.fitBounds(bounds);
 }
- 
-google.maps.event.addDomListener(window, 'load', initialize);
+ google.maps.event.addDomListener(window, 'load', initialize);
+
 </script>
-        
     </body>
 </html>

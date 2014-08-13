@@ -1,61 +1,36 @@
 @import "susy";
-@mixin sticky-footer($footer-height, $wrapper-selector: ("#wrapper"), $container-selector: ("#container"), $footer-selector: ("#footer")) {
-  html, body {
-    height: 100%;
-  }
-  body {
-  	margin: 0px;
-  	padding: 0px;
-  }
-  #{$wrapper-selector} {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -$footer-height;
-    #{$container-selector} {
-      padding: 0 0 $footer-height 0;
-    } 
-  }
-  #{$footer-selector} {
-    height: $footer-height; 
-  }
-}
-.page {
-	@include container;
+
+.slideshow-section,
+.news-section {
+	@include full;
 }
 
-.slideshow-block{
-	@include container;
+section {
+    padding-bottom: 2em;
+        &.martialarts-section,
+        &.articles-section,
+    	&.videos-section {
+             @include container;
+        }
 }
+.videos-left {
+        @include span(6 of 12)
+    }
+.videos-right {
+        @include span(4 last of 12)
+    }
 
-.martialarts {
-
+.martialarts-section ul li {
+      @include gallery(4 of 12);
 }
-
-.list-articles .list-item {
-     @include gallery(3 of 12);
+.articles-section ul li {
+      @include gallery(3 of 12);
 }
-
-.videos {
-	
-}
-
-#map,
 #map-canvas {
     @include full;
     height: 500px;
 }
-
-.content {
-	@include span(8 of $small)
-}
-.sidebar {
-	@include span(4 of $small)
-}
-.site-footer{
-    @include sticky-footer(30px, '.page', '.container', '.site-footer');
-}
-.news-block {
+.news-section {
     @include full;
         .news-left {
         @include span(6 of 12)

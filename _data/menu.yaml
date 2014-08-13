@@ -5,7 +5,7 @@
   href: "/martialarts/karate-gr/"
   subcategories:
     - subtitle: "Τι σημαίνει"
-      subhref: "/martialarts/martialart/karate-gr/"
+      subhref: "/martialarts/karate-gr/"
     - subtitle: "Masters"
       subhref: "/learn1/"
     - subtitle: "Kata"
@@ -15,7 +15,7 @@
   href: "/martialarts/kobudo-gr/"
   subcategories:
     - subtitle: "Τι σημαίνει"
-      subhref: "/martialarts/martialart/kobudo-gr/"
+      subhref: "/martialarts/kobudo-gr/"
     - subtitle: "Masters"
       subhref: "/tools1/"
     - subtitle: "Όπλα"

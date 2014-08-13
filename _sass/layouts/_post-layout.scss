@@ -1,0 +1,39 @@
+@import "susy";
+
+$post-layout: 12 (4em 1em) fluid;
+
+@mixin sticky-footer($footer-height, $wrapper-selector: ("#wrapper"), $container-selector: ("#container"), $footer-selector: ("#footer")) {
+  html, body {
+    height: 100%;
+  }
+  body {
+  	margin: 0px;
+  	padding: 0px;
+  }
+  #{$wrapper-selector} {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -$footer-height;
+    #{$container-selector} {
+      padding: 0 0 $footer-height 0;
+    } 
+  }
+  #{$footer-selector} {
+    height: $footer-height; 
+  }
+}
+
+/* Main Post Html */
+.page {
+	@include container;
+}
+.content {
+	@include span(8 of 12)
+}
+.sidebar {
+	@include span(4 last of 12)
+}
+.site-footer{
+    @include sticky-footer(30px, '.page', '.container', '.site-footer');
+}
