@@ -1,11 +1,16 @@
 @import "susy";
 $nav-layout-right: layout( 16 0 float inside);
 $menu-bg: #323232;
-$menu-bg-link: #ffffff;
-$menu-bg-hover: rgba(84, 84, 84, 0.75);
-$menu-bg-hover-link: #ffffff;
+$menu-bg-second: #323232;
+$menu-bg-hover: transparent;
+$menu-bg-hover-second: #363636;
 $menu-bg-active: transparent;
-$menu-bg-active-link: transparent;
+
+$menu-link-first: #fff;
+$menu-link-hover-first: #db3232;
+$menu-link-active-first: #db3232;
+$menu-link-second: #fff;
+$menu-link-hover-second: #fff;
 
     #nav {
 
@@ -19,13 +24,12 @@ $menu-bg-active-link: transparent;
 				position: relative;
 			}
 				#nav li a	{
-					color: $menu-bg-link;
-					display: block;
-                    padding: 8px 15px;                    
+					color: $menu-link-first;
+					display: block;                    
 				}
 				#nav li a:active	{
 					background-color: $menu-bg !important;
-                    color: $menu-bg-link !important;
+                    color: $menu-link-active-first !important;
 				}
 			#nav span:after	{
 				width: 0;
@@ -45,10 +49,10 @@ $menu-bg-active-link: transparent;
 
 			}
 				#nav > ul > li		{
-					@include span (2 of $nav-layout-right)
+					margin-right: 35px;
+                    float: left;
 				}
 					#nav > ul > li > a		{						
-						line-height: 2em; /* 60 (24) */
 						text-align: center;
 					}
 						#nav > ul > li:not( :last-child ) > a	{
@@ -56,19 +60,20 @@ $menu-bg-active-link: transparent;
 						#nav > ul > li:hover > a,
 						#nav > ul:not( :hover ) > li.active > a	{
 							background-color: $menu-bg-hover;
-                            color: $menu-bg-hover-link;
+                            color: $menu-link-hover-first;
 						}
 
 
 				/* second level */
 
 				#nav li ul 	{
-                    background-color: $menu-bg;
-                    color: $menu-bg-link;
+                    background-color: $menu-bg-second;
+                    color: $menu-link-second;
 					display: none;
 					position: absolute;
 					top: 100%;
                     width: 150px;
+                    border-top: 1px solid $menu-link-hover-first;
 				}
 					#nav li:hover ul {
 						display: block;
@@ -79,13 +84,14 @@ $menu-bg-active-link: transparent;
 							left: -1px;
 						}
 						#nav li ul a	{
-                             color: $menu-bg-link;
+                             color: $menu-link-second;
+                            padding: 10px;
                             
 						}
 							#nav li ul li a:hover,
 							#nav li ul:not( :hover ) li.active a {
-							background-color: $menu-bg-hover;
-                            color: $menu-bg-hover-link;
+							background-color: $menu-bg-hover-second;
+                            color: $menu-link-hover-second;
 							}
 
 

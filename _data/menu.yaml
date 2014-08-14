@@ -7,9 +7,9 @@
     - subtitle: "Τι σημαίνει"
       subhref: "/martialarts/karate-gr/"
     - subtitle: "Masters"
-      subhref: "/learn1/"
+      subhref: "/karate/masters"
     - subtitle: "Kata"
-      subhref: "/learn2/"
+      subhref: "/karate/kata"
  
 - title: "Kobudo"
   href: "/martialarts/kobudo-gr/"
@@ -17,9 +17,9 @@
     - subtitle: "Τι σημαίνει"
       subhref: "/martialarts/kobudo-gr/"
     - subtitle: "Masters"
-      subhref: "/tools1/"
+      subhref: "/kobudo/masters"
     - subtitle: "Όπλα"
-      subhref: "/tools2/"
+      subhref: "/kobudo/weapons"
  
 - title: "Suikendo"
   href: "/martialarts/suikendo-gr/"

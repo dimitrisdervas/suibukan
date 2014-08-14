@@ -1,41 +1,15 @@
     <!-- Modernizr -->
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
-   
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <!--     Foundation //cdnjs.cloudflare.com/ajax/libs/foundation/5.3.1/js/foundation.min.js-->
-<!--      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.3.1/js/foundation.min.js"></script> -->
-<!--     <script src="{{ "js/foundation.js" | prepend: site.baseurl }}" ></script>
-    <script src="{{ "js/foundation.dropdown.js" | prepend: site.baseurl }}"></script> -->
-
-    <!--     Add flexslider -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>
-
-
-
-        <!--Flexslider-->
-<!--            <script type="text/javascript">
-            // Can also be used with $(document).ready()
-             $(window).load(function(){
-              $('.flexslider').flexslider({
-                animation: "slide",
-                animationLoop: false,
-                pausePlay: false,
-                controlNav: false,
-                  directionNav:true
-                }
-              });
-            });       
-            </script>     -->
-<!--         <script>
-            $(document).foundation({
-          dropdown: {
-            // specify the class used for active dropdowns
-            active_class: 'open'
-          }
-        });
-    </script> -->
-
-
-<!-- {% include leafletmap.html %} -->
-{% include googlemap.html %}
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+    <!--     http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly -->
+    <script src="http://iris-metro.codio.io:4000/js/doubletaptogo.min.js" ></script> 
+    <script>$( '#nav li:has(ul)' ).doubleTapToGo();</script>
+<!--     Footer date autoupdate -->
+    <script>
+    jQuery(document).ready(function() { 
+    var strStart = '2014'; 
+    var strYear = new Date(); 
+    if (strStart == strYear.getFullYear()) { jQuery("#copyright_year").html(strStart); } 
+    else { jQuery("#copyright_year").html(strStart + '-' + strYear.getFullYear()); } }); 
+     </script>

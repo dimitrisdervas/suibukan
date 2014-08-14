@@ -8,15 +8,20 @@
         {% include header-post-include.html %}
 
     <div class="page">
-		   <div class="content">
-			    
-<!-- 			    <img src="{{page.image}}" alt=""> -->
-			   <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url={{page.image}}&width=772&height=350" alt="{{page.title}}">
-               <div class="content-inner">
-			     <h1>{{page.title}}</h1>
-			    {{content}}
-			    </div>			   	
-		   	</div>
+        <div class="container">
+             <div class="content">
+                      <div class="post">
+                         <div class="post-img">
+                             <img src="https://i.embed.ly/1/display/crop?key=f2a5d1ca3f744334a53723f0baf9c13a&url={{page.image}}&width=772&height=261" alt="{{page.title}}">
+                         </div>
+                         <div class="content-inner">                   
+                             <h1>{{page.title}}</h1>
+                             {{content}}
+                         </div>			   	
+                    </div>
+            
+            
+            
                   <div class="pagination">
                           <div class="paginate-previous">
                                   {% if page.previous %} 
@@ -31,88 +36,19 @@
                                   {% endif %}
                              </div>
                         </div>
-        
+                 </div>
+        </div>
+            
 		   <div class="sidebar">
-		   <div class="sidebar-content">
-               <!-- gist to watch https://gist.github.com/dhutchison/8548106  -->                    
-               
-<!-- 
-            <ul>
-            {% for org_hash in site.data.orgs %}
-            {% assign org = org_hash[1] %}
-              <li>
-                  
-               username: {{ org.username }} / {{ org_hash[1]['username'] }} <br>
-               name:   {{ org.name }} <br>
-               member name:    <br>
-                  
-               1 {{ site.data.orgs.author[post.author]['name'] }}  2{{ site.data.orgs.author.david.name }} 3{{ site.data.orgs.author[post.author].name }}
-
-                  1deep - {{ site.data.orgs.doeorg.username }}
-                  2deep - {{ site.data.orgs.doeorg.members.name }}
-                  
-                   1deep - {{ site.data.orgs.jekyl.username }}
-                  2deep - {{ site.data.orgs.jekyl.members.name }}
-                  2deep - {{ site.data.orgs.jekyl.members.name[2] }}
-              </li>
-            {% endfor %}
-            </ul> -->
-
-               
-<!--                http://www.tournemille.com/blog/How-to-create-data-driven-navigation-in-Jekyll/ -->
-<!--  {% for dale in site.data.nav %}
-               {% for subcategory in dale.subcategories %}
-               {{ subcategory.subhref }}{{ subcategory.subtitle }}
-               {% endfor %}
-               {% endfor %} -->
-
-                <ul class="list list-articles">
-       {% for post in site.categories['kata'] %} 
-             <li class="list-item">
-                 <section class="inside">
-                     <h1 class="martiarts-title"> <a href="{{ post.url }}">{{ post.title }}</a></h1>
-                  </section>
-                 </li>        
-          {% endfor %}   
-      </ul>
-               <div class="latestnews-block">
-                   <h3 class="sidebar">Τελευταία νέα</h3>
-                {% for post in site.categories['news'] limit:1 %}
-                   {{ post.title }}
-               {% endfor %}
+               <div class="sidebar-content">
+                   {% include  sidebar-news.html %} 
                </div>
-                
-               
-
-               
-               {% for post in site.data[page.martialart] %}
-                   {% for master in post.masters %}
-                       <ul> 
-                           <li>  
-                               {{ master.name }} {{ master.period }} {{ master.text }}
-                           </li>
-                       </ul>
-                   {% endfor %}
-               {% endfor %}
-
-               
-               {% for post in site.data[page.martialart] %}
-                   {% for kata in post.kata %}
-                       <ul> 
-                           <li>  
-                               {{ kata.title }}
-                           </li>
-                       </ul>
-                   {% endfor %}
-               {% endfor %}
-               
-		   </div>
-
 	  		</div>
     </div>
 
     {% include footer-post-include.html %}
-    
-     {% include bottom-post.html %}
+        
+    {% include bottom-post.html %}
+
     </body>
 </html>
