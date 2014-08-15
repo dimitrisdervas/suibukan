@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 _site/
 .sass-cache
-=======
-_site
 Gemfile.lock
->>>>>>> Creating template
+

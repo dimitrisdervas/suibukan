@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# Site settings
 title: SuiBuKan
 email: your-email@domain.com
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
@@ -65,3 +63,8 @@ name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
 >>>>>>> Creating template
+=======
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+>>>>>>> ef93573df5b0caa610dd837aacac33ff9ae491bd
