@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Site settings
 title: SuiBuKan
 email: your-email@domain.com
@@ -59,3 +60,8 @@ defaults:
        type: "post"
     values:
        layout: "martialart-layout"
+=======
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+>>>>>>> Creating template
