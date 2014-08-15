@@ -58,13 +58,3 @@ defaults:
        type: "post"
     values:
        layout: "martialart-layout"
-=======
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
->>>>>>> Creating template
-=======
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
->>>>>>> ef93573df5b0caa610dd837aacac33ff9ae491bd
