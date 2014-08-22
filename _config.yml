@@ -58,4 +58,4 @@ defaults:
        path: "martialarts"
        type: "post"
     values:
-       layout: "martialart-layout"
+       layout: "post-layout"

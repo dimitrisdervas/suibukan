@@ -13,6 +13,7 @@ $text-content: #333333;
 $bg-content: #ffffff;
 $border: #E9E9E9;
 $link-hover: #db3232;
+$icon-hover: #d4d4d4;
 
 body {
 background-color: $bg-body;
@@ -74,6 +75,7 @@ margin:0;
 
 .sidebar {
 		.sidebar-content {
+            float: left;
 			padding:50px 30px 30px;
 			background-color: #fff;
             .sidebar-block {
@@ -85,20 +87,40 @@ margin:0;
                 margin-bottom: 0.8em;
                 }
             }
-            ul .sidebar-list {
-                list-style: none;
-                margin-bottom: 10px;
-                width: 100%;
-                border-bottom: 1px solid #f2f2f2;
-                a {
-                    font-size: 0.9em;
-                        &:hover {
-						color: $link-hover;
+}
+.sidebar .sidebar-block {
+    float: left;
+    width: 100%;
+        ul li {
+            list-style: none;
+            a {
+                width:100%;
+                font-size: 0.9em;
+                display: block;
+                float: left;
+                padding: 5px 0;
+                border-bottom: 1px $bg-body solid;
+                .icon-container {
+                    fill: #fff;
+                    width: 24px;
+                    height: 24px;
+                    display: inline-block;
+                    line-height: 4em;
+                }
+                &:hover {
+                    color: $link-hover;
+                    background: $bg-body;
+                    .icon-container {
+                        fill: $icon-hover;
                     }
                 }
-
-            }
-		}
+                .list-item {
+                    @include span(90% inside of 4);
+                }
+            }                 
+        }
+}
+		
 
 .site-footer {
     background: $bg-header;

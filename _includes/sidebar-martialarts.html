@@ -3,7 +3,12 @@
                         <h3>Kata</h3>
                          <ul>
                           {% for post in site.[page.kata] %}
-                                  <li class="sidebar-list"><a href="{{ post.url }}">{{ post.title }}</a></li> 
+                                 <li>
+                                    <a href="{{ post.url }}">
+                                        <span class="list-item">{{ post.title }}</span>
+                                        <span class="icon-container"><svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg></span>       
+                                       </a>
+                                     </li>
                            {% endfor %}
                                </ul>                     
                        </div>  
@@ -14,7 +19,12 @@
                         <h3>Masters</h3>
                            <ul>
                           {% for post in site.[page.masters] %}
-                                  <li class="sidebar-list"><a href="{{ post.url }}">{{ post.title }}</a></li> 
+                                     <li>
+                                    <a href="{{ post.url }}">
+                                        <span class="list-item">{{ post.title }}</span>
+                                        <span class="icon-container"><svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg></span>       
+                                       </a>
+                                     </li>                              
                            {% endfor %}
                                </ul>
                          </div>  
@@ -25,7 +35,12 @@
                         <h3>Όπλα</h3>
                            <ul>
                           {% for post in site.[page.weapons] %}
-                                  <li class="sidebar-list"><a href="{{ post.url }}">{{ post.title }}</a></li> 
+                                                                  <li>
+                                    <a href="{{ post.url }}">
+                                        <span class="list-item">{{ post.title }}</span>
+                                        <span class="icon-container"><svg viewBox="0 0 8 8"><use xlink:href="#chevron-right"></use></svg></span>       
+                                       </a>
+                                     </li>
                            {% endfor %}
                                </ul>
                          </div>  
